@@ -5,6 +5,8 @@ function calculatePoints() {
   const input3 = parseInt(document.getElementById('input3').value);
   const input4 = parseInt(document.getElementById('input4').value);
   const input5 = parseInt(document.getElementById('input5').value);
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwLfUZr_dyGcsbE3-fzlxAKlKpv_O8hReEWd16nOPdVivInMQz3DUB2FYotBkZR5esMwQ/exec';
+  const form = document.forms['contact-form'];
 
   function validateInput(input) {
     if (isNaN(input)) {
@@ -87,6 +89,12 @@ function calculatePoints() {
     document.getElementById('result').textContent = `Error: ${error.message}`;
   }
 }
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .catch(error => console.error('Error!', error.message))
+})
 
 const calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener('click', calculatePoints);
