@@ -14,10 +14,12 @@
     url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.svg#Mark Pro Heavy')
       format('svg');
 }
-
+html,
 body {
   font-family: 'Mark Pro Heavy';
   max-width: 800px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -47,7 +49,9 @@ p {
   max-width: 80%;
   text-align: center;
   display: grid;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 #calculator {
@@ -79,4 +83,27 @@ label {
 
 button {
   font-family: 'Mark Pro Heavy';
+  background-color: rgba(239, 58, 89, 1);
+  -webkit-text-fill-color: rgba(255, 255, 255, 1)
+  ;
+  color: black;
+  border-radius: 7px;
+  border-width: 0px;
+  font-size: 10pt;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #fff !important;
+  text-align: center;
+  font-size: 11px;
+  padding-top: 15px;
+}
+
+.footer-support-text-owned {
+  font-size: 12px;
+  padding-top: 15px;
+  margin-top: 20px;
+  color: #fff;
 }
