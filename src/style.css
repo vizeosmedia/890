@@ -1,0 +1,81 @@
+@import url(https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy);
+
+@font-face {
+  font-family: 'Mark Pro Heavy';
+  src: url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot');
+  src: url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff')
+      format('woff'),
+    url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.ttf')
+      format('truetype'),
+    url('https://db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.svg#Mark Pro Heavy')
+      format('svg');
+}
+
+body {
+  font-family: 'Mark Pro Heavy';
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  background-image: url('https://cdn.jsdelivr.net/gh/vizeosmedia/890@main/890%20BG%201.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+}
+
+H1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+  color: white;
+  font-size: 18pt;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  display: grid;
+}
+
+#calculator {
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  display: grid;
+  max-width: 50%;
+}
+
+#result {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f5f5f5;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14pt;
+}
+
+button {
+  font-family: 'Mark Pro Heavy';
+}
