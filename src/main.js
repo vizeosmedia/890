@@ -90,11 +90,18 @@ function calculatePoints() {
   }
 }
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .catch(error => console.error('Error!', error.message))
-})
-
 const calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener('click', calculatePoints);
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(data => {
+    alert("Score calculated!");
+  })
+  .then(response => response.json())
+  .catch(error => console.error('Error!', error.message));
+});
