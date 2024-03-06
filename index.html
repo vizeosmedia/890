@@ -5,10 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>890 Top 100 Calculator</title>
-    <link
-      href="https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy"
-      rel="stylesheet"
-    />
+    <link href="https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy" rel="stylesheet"/>
   </head>
   <body>
     <h1>890 TOP 100 VALIDATION</h1>
@@ -18,28 +15,34 @@
         <label for="input1">Player Reputation:</label>
         *60 points possible
         <input type="number" id="input1" name="Player-Reputation" required />
+        <span id="error1" class="error-message"></span>
         <br />
         <label for="input2">Officer Power:</label>
         *10 points possible
         <input type="number" id="input2" name="Officer-Power" required />
+        <span id="error2" class="error-message"></span>
         <br />
         <label for="input3">Titan Power:</label>
         *10 points possible
         <input type="number" id="input3" name="Titan-Power" required />
+        <span id="error3" class="error-message"></span>
         <br />
         <label for="input4">Merit:</label>
         *10 points possible
         <input type="number" id="input4" name="Merit" required />
+        <span id="error4" class="error-message"></span>
         <br />
         <label for="input5">Kills:</label>
         *10 points possible
         <input type="number" id="input5" name="Kills" required />
+        <span id="error5" class="error-message"></span>
         <br />
         <label for="input6">City Name:</label>
         *10 points possible
-        <textarea name="City-Name" placeholder="Your City Name" id="input6" name="City-Name" required />
+        <textarea name="City-Name" placeholder="Your City Name" id="input6" name="City-Name"></textarea>
+        <span id="error6" class="error-message"></span>
         <br />
-        <input type="submit" id="calculate" value="Submit">Calculate Points</button>
+        <button type="submit" id="calculate">Calculate Points</button>
       </form>
       <div id="result"></div>
     </div>
