@@ -14,28 +14,32 @@
     <h1>890 TOP 100 VALIDATION</h1>
     <p>Total possible points: 100</p>
     <div class="container">
-      <form id="calculator">
+      <form id="calculator" name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbwLfUZr_dyGcsbE3-fzlxAKlKpv_O8hReEWd16nOPdVivInMQz3DUB2FYotBkZR5esMwQ/exec">
         <label for="input1">Player Reputation:</label>
         *60 points possible
-        <input type="number" id="input1" name="input1" required />
+        <input type="number" id="input1" name="Player-Reputation" required />
         <br />
         <label for="input2">Officer Power:</label>
         *10 points possible
-        <input type="number" id="input2" name="input2" required />
+        <input type="number" id="input2" name="Officer-Power" required />
         <br />
         <label for="input3">Titan Power:</label>
         *10 points possible
-        <input type="number" id="input3" name="input3" required />
+        <input type="number" id="input3" name="Titan-Power" required />
         <br />
         <label for="input4">Merit:</label>
         *10 points possible
-        <input type="number" id="input4" name="input4" required />
+        <input type="number" id="input4" name="Merit" required />
         <br />
         <label for="input5">Kills:</label>
         *10 points possible
-        <input type="number" id="input5" name="input5" required />
+        <input type="number" id="input5" name="Kills" required />
         <br />
-        <button type="button" id="calculate">Calculate Points</button>
+        <label for="input6">City Name:</label>
+        *10 points possible
+        <textarea name="City-Name" placeholder="Your City Name" id="input6" name="City-Name" required />
+        <br />
+        <input type="submit" id="calculate" value="Submit">Calculate Points</button>
       </form>
       <div id="result"></div>
     </div>
